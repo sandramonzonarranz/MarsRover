@@ -7,7 +7,7 @@ public class DirectionTest {
 
 	// Tests for coordinates relative positions
 	@Test
-	public void nBetweenWAndE(){
+	public void nBetweenWAndETest(){
 		Direction n = Direction.W.turnRight();
 		Assert.assertEquals(Direction.N, n);
 		n = Direction.E.turnLeft();
@@ -15,7 +15,7 @@ public class DirectionTest {
 	}
 	
 	@Test
-	public void eBetweenNAndS(){
+	public void eBetweenNAndSTest(){
 		Direction e = Direction.N.turnRight();
 		Assert.assertEquals(Direction.E, e);
 		e = Direction.S.turnLeft();
@@ -23,7 +23,7 @@ public class DirectionTest {
 	}
 	
 	@Test
-	public void sBetweenEAndW(){
+	public void sBetweenEAndWTest(){
 		Direction s = Direction.E.turnRight();
 		Assert.assertEquals(Direction.S, s);
 		s = Direction.W.turnLeft();
@@ -31,7 +31,7 @@ public class DirectionTest {
 	}
 	
 	@Test
-	public void wBetweenSAndN(){
+	public void wBetweenSAndNTest(){
 		Direction w = Direction.S.turnRight();
 		Assert.assertEquals(Direction.W, w);
 		w = Direction.N.turnLeft();
@@ -41,7 +41,7 @@ public class DirectionTest {
 	
     // Test coordinates XY positions
     @Test
-    public void nInXY() {
+    public void nInXYTest() {
         int posX = Direction.N.getX();
         int posY = Direction.N.getY();
 
@@ -50,7 +50,7 @@ public class DirectionTest {
     }
 
     @Test
-    public void eInXY() {
+    public void eInXYTest() {
         int posX = Direction.E.getX();
         int posY = Direction.E.getY();
 
@@ -59,7 +59,7 @@ public class DirectionTest {
     }
     
     @Test
-    public void sInXY() {
+    public void sInXYTest() {
         int posX = Direction.S.getX();
         int posY = Direction.S.getY();
 
@@ -68,7 +68,7 @@ public class DirectionTest {
     }
     
     @Test
-    public void wInXY() {
+    public void wInXYTest() {
         int posX = Direction.W.getX();
         int posY = Direction.W.getY();
 

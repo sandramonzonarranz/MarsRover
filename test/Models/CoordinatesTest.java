@@ -15,26 +15,34 @@ public class CoordinatesTest {
     	coordinates = new Coordinates(5,5);
 	}
     
+
     @Test
-    public void xCoordinatesAreIncrementedForPositiveValue() {
+    public void moveNewCooordinates() {
+        Coordinates newBoundary = coordinates.moveCoordinates(1, -1);
+        Assert.assertEquals("6 4", newBoundary.toString());
+        Assert.assertEquals("5 5", coordinates.toString());
+    }
+    
+    @Test
+    public void moveXPositiveTest() {
         coordinates = coordinates.moveCoordinates(1, 0);
         Assert.assertEquals("6 5", coordinates.toString());
     }
 
     @Test
-    public void xCoordinatesAreDecrementedForNegativeValue() {
+    public void moveXNegativeTest() {
     	coordinates = coordinates.moveCoordinates(-1, 0);
         Assert.assertEquals("4 5", coordinates.toString());
     }
 
     @Test
-    public void yCoordinatesAreIncrementedForPositiveValue() {
+    public void moveYPositiveTest() {
     	coordinates = coordinates.moveCoordinates(0, 1);
         Assert.assertEquals("5 6", coordinates.toString());
     }
 
     @Test
-    public void yCoordinatesAreDecrementedForNegativeValue() {
+    public void moveYNegativeTest() {
     	coordinates = coordinates.moveCoordinates(0, -1);
         Assert.assertEquals("5 4", coordinates.toString());
     }
@@ -58,18 +66,10 @@ public class CoordinatesTest {
         Assert.assertTrue(coordinates.isOut(outPoint));
     }
 
-
     @Test
     public void pointYOut() {
         Coordinates outPoint = new Coordinates(5,6);
         Assert.assertTrue(coordinates.isOut(outPoint));
-    }
-
-    @Test
-    public void moveNewCooordinates() {
-        Coordinates newBoundary = coordinates.moveCoordinates(1, -1);
-        Assert.assertEquals("6 4", newBoundary.toString());
-        Assert.assertEquals("5 5", coordinates.toString());
     }
     
     @Test

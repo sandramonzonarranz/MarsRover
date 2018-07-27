@@ -15,25 +15,25 @@ public class PlateauTest {
 	}
     
     @Test
-    public void plateauXRightOut() {
+    public void plateauXRightOutTest() {
         Coordinates coordinates = new Coordinates(6, 0);
         Assert.assertFalse(plateau.isIn(coordinates));
     }
 
     @Test
-    public void plateauXLeftOut() {
+    public void plateauXLeftOutTest() {
         Coordinates coordinates = new Coordinates(-1, 0);
         Assert.assertFalse(plateau.isIn(coordinates));
     }
 
     @Test
-    public void plateauYUpOut() {
+    public void plateauYUpOutTest() {
         Coordinates coordinates = new Coordinates(0, 6);
         Assert.assertFalse(plateau.isIn(coordinates));
     }
 
     @Test
-    public void plateauYDownOut() {
+    public void plateauYDownOutTest() {
         Coordinates coordinates = new Coordinates(0, -1);
         Assert.assertFalse(plateau.isIn(coordinates));
     }
