@@ -27,7 +27,6 @@ public class ParseCommandsTest {
     	ParseCommand parser = new ParseCommand("m");
         List<Command> commands = parser.toCommands();
         Assert.assertTrue(commands.get(0) instanceof MoveCommand);
-        Assert.assertTrue(commands.get(1) instanceof MoveCommand);
     }
 
     @Test

@@ -15,6 +15,6 @@ public class MoveCommandTest {
         MoveCommand command = new MoveCommand();
         MarsRover marsRover = new MarsRover(new Plateau(5,5), Direction.N, new Coordinates(1,1));
         command.run(marsRover);
-        Assert.assertEquals("1 1 N", marsRover.currentLocation());
+        Assert.assertEquals("1 2 N", marsRover.currentLocation());
     }
 }
