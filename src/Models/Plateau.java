@@ -16,11 +16,11 @@ public class Plateau {
     private Coordinates bottomCoordinates = new Coordinates(0, 0);
 
     public Plateau(final int x, final int y) {
-        topCoordinates = topCoordinates.newInstance(x, y);
+        topCoordinates = topCoordinates.moveCoordinates(x, y);
     }
 
-    public boolean hasWithinBounds(final Coordinates coordinates) {
-        return bottomCoordinates.isOut(coordinates) && topCoordinates.isInside(coordinates);
+    public boolean isIn(final Coordinates coordinates) {
+        return bottomCoordinates.isOut(coordinates) && topCoordinates.isIn(coordinates);
     }
 
 }

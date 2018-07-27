@@ -14,14 +14,9 @@ public class Coordinates {
 	
 	@Getter @Setter
     private int y;
-    
 
-    public Coordinates newInstance(final int xCoordinateStepValue, final int yCoordinateStepValue) {
-        return new Coordinates(this.x + xCoordinateStepValue, this.y + yCoordinateStepValue);
-    }
-
-    public Coordinates nextCoordinates(final int moveX, final int moveY) {
-        return new Coordinates(this.x + moveX, this.y + moveX);
+    public Coordinates moveCoordinates(final int moveX, final int moveY) {
+        return new Coordinates(this.x + moveX, this.y + moveY);
     }
 
     @Override
@@ -33,7 +28,7 @@ public class Coordinates {
         return res.toString();
     }
 
-    public boolean isInside(final Coordinates coordinates) {
+    public boolean isIn(final Coordinates coordinates) {
         return xIsInside(coordinates.x) && yIsInside(coordinates.y);
     }
 
