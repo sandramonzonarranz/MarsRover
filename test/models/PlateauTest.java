@@ -1,8 +1,11 @@
-package Models;
+package models;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import models.Coordinates;
+import models.Plateau;
 
 
 public class PlateauTest {

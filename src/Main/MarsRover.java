@@ -1,14 +1,14 @@
-package Main;
+package main;
 
 import java.util.List;
 
-import Commands.Command;
-import Commands.ParseCommand;
-import Models.Plateau;
+import commands.Command;
+import commands.ParseCommand;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import Models.Direction;
-import Models.Coordinates;
+import models.Coordinates;
+import models.Direction;
+import models.Plateau;
 
 @NoArgsConstructor
 @AllArgsConstructor

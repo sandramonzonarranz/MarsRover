@@ -1,6 +1,6 @@
-package Commands;
+package commands;
 
-import Main.MarsRover;
+import main.MarsRover;
 
 public class MoveCommand implements Command{
 	

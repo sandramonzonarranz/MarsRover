@@ -1,12 +1,13 @@
-package Commands;
+package commands;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import Main.MarsRover;
-import Models.Coordinates;
-import Models.Direction;
-import Models.Plateau;
+import commands.MoveCommand;
+import main.MarsRover;
+import models.Coordinates;
+import models.Direction;
+import models.Plateau;
 
 public class MoveCommandTest {
 

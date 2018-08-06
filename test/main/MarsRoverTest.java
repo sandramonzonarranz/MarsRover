@@ -1,11 +1,12 @@
-package Main;
+package main;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import Models.Coordinates;
-import Models.Direction;
-import Models.Plateau;
+import main.MarsRover;
+import models.Coordinates;
+import models.Direction;
+import models.Plateau;
 
 public class MarsRoverTest {
 

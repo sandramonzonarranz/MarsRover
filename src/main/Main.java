@@ -1,12 +1,8 @@
-package Main;
+package main;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-import Models.Coordinates;
-import Models.Direction;
-import Models.Plateau;
+import models.Coordinates;
+import models.Direction;
+import models.Plateau;
 
 public class Main {
 
@@ -32,30 +28,5 @@ public class Main {
 		mr.run("MMRMMRMRRM");
 		System.out.println(mr.currentLocation());
 	}
-
-	private static void readInput() {
-		 BufferedReader br = null;
-		 try {
-	        br = new BufferedReader(new InputStreamReader(System.in));
-	        while (true) {
-	            System.out.print("Enter input : ");
-                String input = br.readLine();
-                if ("q".equals(input)) {
-                    System.exit(0);
-                }
-	        }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-	}
-	
 
 }

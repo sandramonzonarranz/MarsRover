@@ -1,9 +1,15 @@
-package Commands;
+package commands;
 
 import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import commands.Command;
+import commands.MoveCommand;
+import commands.ParseCommand;
+import commands.TurnLeftCommand;
+import commands.TurnRightCommand;
 
 public class ParseCommandsTest {
 

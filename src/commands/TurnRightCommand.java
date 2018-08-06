@@ -1,6 +1,6 @@
-package Commands;
+package commands;
 
-import Main.MarsRover;
+import main.MarsRover;
 
 public class TurnRightCommand implements Command {
 	

@@ -1,7 +1,9 @@
-package Models;
+package models;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import models.Direction;
 
 public class DirectionTest {
 
